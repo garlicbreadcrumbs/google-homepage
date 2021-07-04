@@ -1,21 +1,61 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <style>
-            .logo {
+            .main-content {
                 display: flex;
+                flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                <!-- Figure out how to center this properly -->
+                height: 100vh;
+            }
+
+            .logo {
+                margin-bottom: 25px;
+            }
+
+            .search {
+                border-color: rgb(170, 170, 170);
+                border-width: 1px;
+                border-style: none;
+                height: 34px;
+                width: 456px;
+                outline: none;
+            }
+
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+            
+            li {
+                float:right;
+            }
+
+            a {
+                display: block;
+                padding: 8px;
             }
         </style>
     </head>
     <body>
-        <div class="logo">
-            <img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
+        <div>
+            <ul>
+                <li><a href="">Gmail</a></li>
+                <li><a href="">Sign in</a></li>
+                <li><a href="">placeholder</a></li>
+                <li><a href="">Images</a></li>
+            </ul>
+        </div>
+        <!-- Navbar pushing content around; try using flex or grid? -->
+        <div class="main-content">
+            <img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
             <form action="">
-                <input type="text" placeholder="">
+                <input class="search" type="text" placeholder="">
             </form>
         </div>
+        <span class="material-icons">search</span>
     </body>
 </html>
