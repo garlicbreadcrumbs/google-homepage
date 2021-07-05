@@ -1,58 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <style>
-            .main-content {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                height: 100vh;
-            }
-
-            .logo {
-                margin-bottom: 25px;
-            }
-
-            .search {
-                border-color: rgb(170, 170, 170);
-                border-width: 1px;
-                border-style: none;
-                height: 34px;
-                width: 456px;
-                outline: none;
-            }
-
-            .nav-list {
-                background:green;
-                margin: 0;
-                padding:1rem 0;
-                display: flex;
-                justify-content: flex-end;
-                align-items: center;
-            }
-
-            .nav-item {
-                list-style: none;
-                margin-right:1rem;
-            }
-
-            .nav-item a {
-                text-decoration: none;
-                color: black;
-            }
-
-            .button-sign-in {
-                background: #2b7de9;
-                color: white;
-                border: none;
-                outline: none;
-                border-radius: 5px;
-                padding: 0.5rem 1.5rem;
-                cursor: pointer;
-            }
-        </style>
     </head>
     <body>
         <div>
@@ -67,17 +17,49 @@
                     <a href="#">placeholder</a>
                 </li>
                 <li class="nav-item">
-                    <button class="button-sign-in" type="button"><a href="#">Sign in</a></button>
+                    <button class="button-sign-in" type="button">Sign in</button>
                 </li>
             </ul>
         </div>
         
         <div class="main-content">
-            <img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
-            <form action="">
-                <input class="search" type="text" placeholder="">
-            </form>
+            <div>
+                <img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
+            </div>
+            <div class="search-container">
+                <form action="">
+                    <input class="search" type="text" placeholder="">
+                </form>
+            </div>
         </div>
-        <span class="material-icons">search</span>
+        <!-- Fix search input -->
+        <div class="footer">
+            <ul class="footer-list">
+                <li class="footer-item">
+                    <a href="#">About</a>
+                </li>
+                <li class="footer-item">
+                    <a href="#">Advertising</a>
+                </li>
+                <li class="footer-item">
+                    <a href="#">Business</a>
+                </li>
+                <li class="footer-item">
+                    <a href="#">How Search works</a>
+                </li>
+            </ul>
+            <!-- Figure out footer -->
+            <ul class="footer-list">
+                <li class="footer-item">
+                    <a href="#">Privacy</a>
+                </li>
+                <li class="footer-item">
+                    <a href="#">Terms</a>
+                </li>
+                <li class="footer-item">
+                    <a href="#">Setting</a>
+                </li>
+            </ul>
+        </div>
     </body>
 </html>
