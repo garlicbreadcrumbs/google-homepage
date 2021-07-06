@@ -2,38 +2,6 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.main-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: blue;
-}
-
-.logo {
-    margin-bottom: 25px;
-}
-
-.search-container {
-    display: flex;
-    border-color: rgb(170, 170, 170);
-    height: 44px;
-    width: 511px;
-    background: white;
-    border-radius: 24px;
-}
-
-
-.search {
-    border-width: 1px;
-    border-style: none;
-    height: 34px;
-    width: 416px;
-    outline: none;
-    background: pink;
-}
-
 .nav-list {
     background:green;
     margin: 0;
@@ -63,8 +31,59 @@ body {
     cursor: pointer;
 }
 
-.footer-list {
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: blue;
+}
+
+.logo {
+    margin-bottom: 25px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #dfe1e5;
+    height: 44px;
+    width: 511px;
+    background: white;
+    border-radius: 24px;
+
+}
+
+.search-input {
+    border-width: 1px;
+    border-style: none;
+    height: 34px;
+    width: 416px;
+    outline: none;
+    background: pink;
+}
+
+.button-search, .button-lucky {
+    background: #f8f9fa;
+    border: none;
+    outline: none;
+    margin: 30px 4px;
+    border-radius: 4px;
+    padding: 0.5rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
     background: #f2f2f2;
+    flex-wrap: wrap;
+}
+
+.footer-list {
     margin: 0;
     padding:1rem 0;
     display: flex;
@@ -72,12 +91,22 @@ body {
     align-items: center;
 }
 
-.footer-item {
+.footer-item-left {
     list-style: none;
-    margin-left:1rem;
+    margin-left: 1rem;
 }
 
-.footer-item a {
+.footer-item-right {
+    list-style: none;
+    margin-right: 1rem;
+}
+
+.footer-item-left a {
+    text-decoration: none;
+    color: #70757a;
+}
+
+.footer-item-right a {
     text-decoration: none;
     color: #70757a;
 }
