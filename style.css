@@ -1,11 +1,13 @@
 body {
     font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
 .nav-list {
-    background:green;
+    background:white;
     margin: 0;
-    padding:1rem 0;
+    padding: 6px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -13,7 +15,9 @@ body {
 
 .nav-item {
     list-style: none;
-    margin-right:1rem;
+    margin-top: 5px;
+    margin-right: 10px;
+    font-size: 14px;
 }
 
 .nav-item a {
@@ -21,13 +25,21 @@ body {
     color: black;
 }
 
+.nav-item a:hover {
+    text-decoration: underline;
+}
+
 .button-sign-in {
     background: #2b7de9;
     color: white;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
     border: none;
     outline: none;
     border-radius: 5px;
-    padding: 0.5rem 1.5rem;
+    padding: 10px 25px;
+    margin-left: 8px;
+    min-width: 80px;
     cursor: pointer;
 }
 
@@ -37,7 +49,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: blue;
+    background: white;
 }
 
 .logo {
@@ -46,14 +58,17 @@ body {
 
 .search-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     border: 1px solid #dfe1e5;
     height: 44px;
     width: 511px;
     background: white;
     border-radius: 24px;
+}
 
+.search-container:hover {
+    box-shadow: 2px 2px 4px rgba(0,0,0,.1);
 }
 
 .search-input {
@@ -62,18 +77,24 @@ body {
     height: 34px;
     width: 416px;
     outline: none;
-    background: pink;
+    background: white;
 }
 
 .button-search, .button-lucky {
     background: #f8f9fa;
-    border: none;
+    border: 1px solid transparent;
     outline: none;
     margin: 30px 4px;
     border-radius: 4px;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 14px;
     text-align: center;
     cursor: pointer;
+}
+
+.button-search:hover, .button-lucky:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    border: 1px solid #dadce0;
 }
 
 .footer {
@@ -81,6 +102,7 @@ body {
     justify-content: space-between;
     background: #f2f2f2;
     flex-wrap: wrap;
+    font-size: 14px;
 }
 
 .footer-list {
